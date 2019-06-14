@@ -1,38 +1,33 @@
 body {
 	height: 100%;
-	}
+margin:0;
+padding: 0;}
 
-.home{
-	background-image: url("imagens/fundo2.png");
-	height: 100%;
+#Home{
+	background-image: url("imagens/fundo.png");
+	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
-	}
+	background-attachment: fixed;}
 
-.resto{
-	background-image: url("imagens/fundoresto.jpg");
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+#Fatec{
+	padding-top: 20px;}
+
 nav {
 	background:#ABADAD;
-	margin-top:0;
+	height: 8vh;
+	position: fixed;
 	width:100%;
-	margin-left:0;
 	float:right;
-	opacity: 0.7;
-	border-radius: 10px;
-	}
+	z-index: 2;}
 
 nav li {
 	display: inline;
 	margin: 0 0 0 40px;}
 
 footer.index {
-	position: absolute;
 	bottom: 0;
-	width: 99%;
+	width: 100%;
 	clear: both;
 	background: #eee;
 	font-family: helvetica;
@@ -41,40 +36,31 @@ footer.index {
 	text-align: right;
 	color: #777;
 	font-size: 12px;
-}
-
-footer.prof {
-	clear: both;
-	background: #eee;
-	padding: 5px;
-	border-top: 2px solid #ddd;
-	text-align: right;
-	color: #777;
-	font-size: 12px;
-	font-family: helvetica;
-}
+	height: 5vh;}
 
 a:link, a:visited {
 	position: relative;
 	color: white;
 	text-decoration:none;
 	font-family: helvetica;
-	font-size: 20px;
-}
+	font-size: 20px;}
+
 a:hover {
-	color:#2B88BD;
-}
+	color:#2B88BD;}
 
-a.lattes{font-size: 18px;}
+a.lattes{
+	font-size: 18px;}
 
-a.linksmatematica{color:black;}
-a.linksmatematica:hover{color:#2B88BD;}
+a.linksmatematica{
+	color:black;}
+
+a.linksmatematica:hover{
+	color:#2B88BD;}
 
 .menu{
-list-style:none;  
-float:right;
-padding-top: 6px;
-}
+	list-style:none;  
+	float:right;
+	padding-top: 6px;}
 
 li.submenu{
 	float:center;
@@ -83,23 +69,24 @@ li.submenu{
 	border:none; 
 	display:block; 
 	width:120px;
-	text-align: center;
-}
+	text-align: center;}
 
 .menu li{ 
-position:relative; 
-float:left; 
-width:100px;
-margin-left:3px;
-padding-top:1px;
-padding-left:35px;
-padding-right:35px;
-padding-bottom:1px;
-font-family: helvetica;
-}
+	position:relative; 
+	float:left; 
+	width:100px;
+	margin-left:3px;
+	padding-top:1px;
+	padding-left:45px;
+	padding-right:45px;
+	padding-bottom:1px;
+	font-family: helvetica;}
 
-
-.menu li a{color:black; text-decoration:none; padding:0px 3px; display:block;}
+.menu li a{
+	color:black;
+	text-decoration:none;
+	padding:0px 3px;
+	display:block;}
  
 .menu li a:hover{  
 	color:#2B88BD;}
@@ -112,11 +99,10 @@ li ul {
 	background-color:#DADADA; 
 	position: absolute;
 	display: none;
-	float:left;
+	float:left;}
 
-}
-
-.menu li:hover ul, .menu li.over ul{display:block;}
+.menu li:hover ul, .menu li.over ul{
+	display:block;}
 
 .menu li ul li{
 	display:block; 
@@ -124,29 +110,34 @@ li ul {
 	font-size:22px;
 	margin-left: -25%;
 	margin-bottom: 10px;
-	width:500px;
+	width:500px;}
 
-}
-.rossini{padding-left: 5px;
-padding-top: 3px;}
+.rossini{
+	padding-left: 5px;
+	padding-top: 3px;}
 
-}
-.fotoligia {margin-left: 12px;}
+.fotoligia {
+	margin-left: 12px;}
 
-.fotovirgilio{margin-left: 18px;
-			  margin-top: 3px;}
+.fotovirgilio{
+	margin-left: 18px;
+	margin-top: 3px;}
 
-.fotofabiana{margin-left: 18px;
-			 margin-top: 3px;}
+.fotofabiana{
+	margin-left: 18px;
+	margin-top: 3px;}
 
-.fotoandrea{margin-left: 18px;
-			  margin-top: 3px;}
+.fotoandrea{
+	margin-left: 18px;
+	margin-top: 3px;}
 
-.fotoselma{margin-left: 18px;
-			  margin-top: 3px;}
+.fotoselma{
+	margin-left: 18px;
+	margin-top: 3px;}
 
-.fotoalexandre{margin-left: 18px;
-			  margin-top: 3px;}
+.fotoalexandre{
+	margin-left: 18px;
+	margin-top: 3px;}
 
 aside.professor{
 	float: left;
@@ -155,9 +146,7 @@ aside.professor{
 	margin: 5px 0px 0px 0px;
 	padding: 0px;
 	display: block;
-	border-radius: 10px;
-	
-}
+	border-radius: 10px;}
 
 aside.disc{
 	float:left;
@@ -168,8 +157,7 @@ aside.disc{
 	font-family: helvetica;
 	font-size: 20px;
 	color:white;
-	border-radius: 10px;
-	}
+	border-radius: 10px;}
 
 article.materia{
 	float: right;
@@ -181,70 +169,75 @@ article.materia{
 	font-size: 20px;
 	color: black;
 	font-family: helvetica;
-	border-radius: 10px;
-}
-.materia p {text-indent: 30px;
-line-height: 28px;}
+	border-radius: 10px;}
 
-.eu p{text-indent: 30px;
-line-height: 28px;
-font-family: helvetica;
-font-size: 20px;
-text-align: justify;
-}
+.materia p {
+	text-indent: 30px;
+	line-height: 28px;}
+
+.eu p{
+	text-indent: 30px;
+	line-height: 28px;
+	font-family: helvetica;
+	font-size: 20px;
+	text-align: justify;}
 
 h1.titulo{
 	font-family: helvetica;
 	font-size: 25px;
 	font-weight: bold;
-	background-color: white;
-}
+	background-color: white;}
+
 .fotosprofessores{
 	float:left;
-	margin: 10px;
-}
-.fotosalgoritmo{float:center;
-margin-left: 225px;}
+	margin: 10px;}
 
-.fotosdesign{margin-left: 64px;
-float:left;
-margin-bottom: 40px;}
+.fotosalgoritmo{
+	float:center;
+	margin-left: 225px;}
 
-.fotospadrao{margin: 18px;
-padding-left: 15px}
+.fotosdesign{
+	margin-left: 64px;
+	float:left;
+	margin-bottom: 40px;}
 
-.fotosfatec{float: left;
-margin-left: 10px;
-margin-bottom: 10px;
-margin-right: 0px;
-padding-left: 3px;}
+.fotospadrao{
+	margin: 18px;
+	padding-left: 15px}
 
-.fotoeu{float: left;
-margin-top: 0;
-margin-left: 15px;
-margin-bottom: 10px;
-margin-right: 10px;
-padding-left: 3px;}
+.fotosfatec{
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	padding-left: 3px;}
+
+.fotoeu{
+	float: left;
+	margin-top: 0;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding-left: 3px;}
 
 article.fatec{
 	float: left;
 	width: 50%;
 	background-color: rgba(248, 248, 255, 0.8);
-	border-radius: 10px;
 	font-family: helvetica;
 	font-size: 19px;
 	color: black;
 	text-align: justify;
 	padding: 10px;
 	text-indent: 30px;
+	margin-top: 8px;}
+
+aside.fotofatec{
+	float: right;
+	width:48%;
+	background-color: rgba(192,192,192,0.8);
 	margin-top: 8px;
-}
-aside.fotofatec{float: right;
-width:48%;
-background-color: rgba(192,192,192,0.8);
-margin-top: 8px;
-border-radius: 10px;
-font-family: helvetica;}
+	font-family: helvetica;}
 
 article.form{
 	float: left;
@@ -257,14 +250,21 @@ article.form{
 	text-align: justify;
 	padding: 10px;
 	text-indent: 30px;
+	margin-top: 80px;}
+
+aside.eu{
+	float: right;
+	width:63%;
+	background-color: rgba(192,192,192,0.8);
 	margin-top: 80px;
-}
-aside.eu{float: right;
-width:63%;
-background-color: rgba(192,192,192,0.8);
-margin-top: 80px;
-border-radius: 10px;
-font-family: helvetica;}
+	border-radius: 10px;
+	font-family: helvetica;}
 
-
-/*box-shadow: 5px 5px rgba(0,0,0,0.4);*/
+@media (max-width: 1000px) {
+		nav {
+			height: auto;
+		}
+		.menu li {
+			float: none;
+		}
+	}
