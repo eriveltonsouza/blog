@@ -1,9 +1,8 @@
 body {
-	margin:0;
+	margin:0 3px 0 3px;
 	padding: 0;}
 
-/* Background do site */
-
+	/* Background do site */
 #Home{
 	background-image: url("imagens/fundo.png");
 	height: 100vh;
@@ -11,25 +10,23 @@ body {
 	background-size: cover;
 	background-attachment: fixed;}
 
+	/*Para o conteúdo não ficar sob o nav*/
 #Fatec, #Selma, #Ligia, #Fabiana, #Andrea, #Virgilio1, #Virgilio2, #Alexandre, #Contato{
-	padding-top: 5%;
-}
+	padding-top: 5%;}
 
 #Fatec{
 	display: flex;
 	flex-direction: row;
-	flex: 1;
-}
+	flex: 1;}
 
 #Selma, #Ligia, #Fabiana, #Andrea, #Virgilio1, #Virgilio2, #Alexandre, #Contato{
 	display: flex;
 	flex: 1;
-	flex-direction: row-reverse;
-}
+	flex-direction: row-reverse;}
 
 nav {
 	background:black;
-	height: 10vh;
+	height: 8vh;
 	position: fixed;
 	width:100%;
 	float:right;
@@ -38,6 +35,13 @@ nav {
 nav li {
 	display: inline-block;}
 
+.menu{
+	list-style:none;  
+	float:right;
+	padding-top: 6px;
+	padding: 0px;}
+
+	/*Menu principal*/
 .menu li{ 
 	position:relative; 
 	float:left; 
@@ -52,10 +56,11 @@ nav li {
 	color:white;
 	padding:0px 3px;
 	display:block;}
- 
+
 .menu li a:hover{  
 	color:#2B88BD;}
 
+	/*Menu dropdown*/
 .menu li ul {
 	width: 260px;
 	font-size: 20px;
@@ -69,6 +74,7 @@ nav li {
 .menu li:hover ul, .menu li.over ul{
 	display:block;}
 
+	/*Texto Menu Dropdown*/
 .menu li ul li{
 	display:block; 
 	width:50px;
@@ -77,13 +83,7 @@ nav li {
 	margin-bottom: 10px;
 	width:500px}
 
-.menu{
-	list-style:none;  
-	float:right;
-	padding-top: 6px;
-	padding: 0px;
-	}
-
+	/*Rodapé*/
 footer{
 	bottom: 0;
 	width: 100%;
@@ -97,6 +97,7 @@ footer{
 	font-size: 12px;
 	height: 5vh;}
 
+	/*Configurações de links*/
 a:link, a:visited {
 	position: relative;
 	color: white;
@@ -116,49 +117,18 @@ a.linksmatematica{
 a.linksmatematica:hover{
 	color:#2B88BD;}
 
-
-
-
-
+	/*Logo no nav*/
 .rossini{
 	padding-left: 5px;
 	padding-top: 3px;}
 
-/*.fotoligia {
-	margin-left: 12px;}
-
-.fotovirgilio{
-	margin-left: 18px;
-	margin-top: 3px;}
-
-.fotofabiana{
-	margin-left: 18px;
-	margin-top: 3px;}
-
-.fotoandrea{
-	margin-left: 18px;
-	margin-top: 3px;}
-
-.fotoalexandre{
-	margin-left: 18px;
-	margin-top: 3px;}*/
-
+	/*Fotos professores*/
 .fotoselma, .fotoligia, .fotovirgilio, .fotofabiana, .fotoandrea, .fotoalexandre{
 	margin-left: auto;
 	margin-right: auto;
 	display: block;}
 
-aside.disc{
-	float:left;
-	background-color: rgba(112,6,155,0.8);
-	width: 20%;
-	height: 50%;
-	margin-top: .5%;
-	text-align: center;
-	font-family: helvetica;
-	font-size: 20px;
-	color:white;}
-
+	/*Conteúdo principal das matérias*/
 article.materia{
 	float: right;
     width: 78%;
@@ -174,59 +144,57 @@ article.materia{
 	text-indent: 30px;
 	line-height: 28px;}
 
+	/*Parágrafo na aba contato*/
 .eu p{
 	text-indent: 30px;
 	line-height: 28px;
 	font-family: helvetica;
 	font-size: 20px;
-	text-align: justify;
-}
-/*Título Sobre Fatec*/
+	text-align: justify;}
+
+	/*Título Sobre Fatec*/
 h1.titulo{
 	font-family: helvetica;
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: bold;
-	background-color: white;
-}
-/*Título galeria de imagens*/
+	background-color: white;}
+
+	/*Título galeria de imagens*/
 h3.titulo{
 	font-family: helvetica;
 	text-align: center;
 	font-size: 1.2em;
-	font-weight: bold;
-}
+	font-weight: bold;}
 
+	/*Títulos menores*/
 h4.titulo{
 	font-family: helvetica;
 	text-align: center;
 	font-size: 1em;
-	font-weight: bold;
-}
-/*.fotosprofessores{
-	float:left;
-	margin: 10px;}*/
+	font-weight: bold;}
 
 .imagens{
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	align-items: center;
-}
+	align-items: center;}
 
 .imagens img{
-	width: 80%;
-}
+	width: 80%;}
 
+	/*Imagens na matéria de Design Digital*/
 .fotosdesign{
 	margin-left: 64px;
 	float:left;
 	margin-bottom: 40px;}
 
+	/*Imagens na matéria de Padrões*/
 .fotospadrao{
 	margin: 18px;
 	padding-left: 15px}
 
+	/*Imagens na aba Fatec*/
 .fotosfatec{
 	display:block;
 	width: 60%;
@@ -234,6 +202,7 @@ h4.titulo{
 	margin-bottom: 10px;
 	margin-right: auto;}
 
+	/*Imagem na aba Contato*/
 .fotoeu{
 	float: left;
 	margin-top: 0;
@@ -242,6 +211,7 @@ h4.titulo{
 	margin-right: 10px;
 	padding-left: 3px;}
 
+	/*Texto principal na aba Fatec*/
 article.fatec{
 	float: left;
 	width: 50%;
@@ -254,6 +224,7 @@ article.fatec{
 	text-indent: 30px;
 	margin-top: 8px;}
 
+	/*Galeria de Imagens, aba Fatec*/
 aside.fotofatec{
 	float: right;
 	width:48%;
@@ -261,6 +232,7 @@ aside.fotofatec{
 	margin-top: 8px;
 	font-family: helvetica;}
 
+	/*Formulário na aba Contato*/
 article.form{
 	float: left;
 	width: 35%;
@@ -273,78 +245,124 @@ article.form{
 	text-indent: 30px;
 	margin-top: 80px;}
 
+	/*Texto na aba Contato*/
 aside.eu{
 	float: right;
 	width:63%;
 	background-color: rgba(192,192,192,0.8);
 	margin-top: 80px;
-	font-family: helvetica;}
+	font-family: helvetica;
+	padding: 5px;}
 
+	/*Nome da disciplina em caixa roxa*/
+aside.disc{
+	float:left;
+	background-color: rgba(112,6,155,0.8);
+	width: 20%;
+	height: 50%;
+	margin-top: .5%;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 20px;
+	color:white;}
 
-.professor{
-	width: 30%;
+	/*Área para foto dos professores*/
+aside.professor{
+	width: 20%;
 	height: 90%;
 	background-color: rgba(5,219,226, 0.5);
-	margin-top: .5%;
-}
+	margin-top: .5%;}
+
+	/*Fotos professores*/
 .professor img{
 	width: 90%;
 	display: block;
 	margin-right: auto;
-	margin-left: auto;
-}	
+	margin-left: auto;}
 
+	/*Primeiro Breakpoint*/
 @media (max-width: 768px) {
 		nav {
-			height: auto;
-		}
+			height: auto;}
+
+		.menu{
+			float: right;}
 
 		article.fatec{
 			float: none;
-			width: 100%;
-		}
+			width: 100%;}
 
 		aside.fotofatec{
-			width: 45%;
-			height: 70%;
-		}
+			float: none;
+			width: 100%;
+			height: 70%;}
 
 		#Selma h2, #Ligia h2, #Fabiana h2, #Andrea h2, #Virgilio1 h2, #Virgilio2 h2, #Alexandre h2{
 			font-family: 'helvetica', sans-serif;
-			font-size: .6em;
-		}
+			font-size: .6em;}
+
+		#Fatec, #Selma, #Ligia, #Fabiana, #Andrea, #Virgilio1, #Virgilio2, #Alexandre, #Contato{
+			padding-top: 18%;}
+
+		.fotoselma, .fotoligia, .fotovirgilio, .fotofabiana, .fotoandrea, .fotoalexandre{
+			display: none;}
+
+		#Contato{
+			display: flex;
+			flex: 1;
+			flex-direction: column-reverse;
+			float:none;
+			width: 100%;}
 
 		a.lattes{
-			font-size: .5em;
-		}
+			font-size: .5em;}
+
 		.fotosfatec{
 			width: 100%;
-			height: 70%;
-		}
+			height: 70%;}
+
 		.menu li {
 			float: none
 			margin-left: auto;
-			margin-right: auto;
-		}
+			margin-right: auto;}
 
 		.rossini{
 			display: block;
 			margin-left: auto;
-			margin-right: auto;
-		}
+			margin-right: auto;}
+
+		#Fatec{
+			display: flex;
+			flex-direction: column;
+			flex: 1;}
+
+		#Selma, #Ligia, #Fabiana, #Andrea, #Virgilio1, #Virgilio2, #Alexandre{
+			display: flex;
+			flex-direction: column-reverse;
+			flex: 1;}
+
+		article.form, aside.eu, aside.disc, article.materia{
+			float: none;
+			width: 100%;}
+
+		aside.disc{
+			font-size: 2em;}
 
 		.professor img{
-			width: 100%;
-		}
-}
+			display: none;}
+	}
+
+	/*Segundo Breakpoint*/
 @media (max-width: 560px) {
 	.menu li {
-		width: 100%;
-	}
+		width: 100%;}
+
 	.menu li ul {
 		position: static;
 		float: none;
-		margin: auto;
+		margin: auto;}
+
+	#Fatec, #Selma, #Ligia, #Fabiana, #Andrea, #Virgilio1, #Virgilio2, #Alexandre, #Contato{
+			padding-top: 40%;}
 	}
-}
 
